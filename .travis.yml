@@ -1,0 +1,16 @@
+sudo: false
+language: C
+services:
+- docker
+cache:
+  directories:
+  - "$HOME/.cache"
+script:
+- sudo apt-get install -y maven
+- mvn deploy
+notifications:
+  email:
+    recipients:
+    - julio@packagecloud.io
+    on_success: change
+    on_failure: always
