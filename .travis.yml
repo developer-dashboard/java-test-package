@@ -7,7 +7,14 @@ cache:
   - "$HOME/.cache"
 script:
 - sudo apt-get install -y maven
-- mvn compile
+- mvn test
+deploy:
+  provider: script # NOT 'packagecloud'!
+  script: mvn deploy
+  skip_cleanup: true
+  on:
+    tags: true
+
 notifications:
   email:
     recipients:
