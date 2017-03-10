@@ -7,7 +7,7 @@ cache:
   - "$HOME/.cache"
 script:
 - sudo apt-get install -y maven
-- mvn deploy
+- mvn compile
 notifications:
   email:
     recipients:
