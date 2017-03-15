@@ -17,7 +17,7 @@
   <scm>
     <connection>scm:git:ssh://github.com/computology/java-test-package.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/computology/java-test-package.git</developerConnection>
-    <url>https://github.com/computology/jake-test-package</url>
+    <url>https://github.com/computology/java-test-package</url>
   </scm>
 
   <build>
